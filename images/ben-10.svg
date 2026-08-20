@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <rect width="400" height="260" fill="#121212"/>
+  <rect x="10" y="10" width="380" height="240" rx="16" fill="#1a381e" stroke="#39FF14" stroke-width="4"/>
+  <!-- Omnitrix Icon -->
+  <circle cx="200" cy="115" r="70" fill="#000" stroke="#39FF14" stroke-width="8"/>
+  <polygon points="150,75 250,75 200,115" fill="#39FF14"/>
+  <polygon points="150,155 250,155 200,115" fill="#39FF14"/>
+  <circle cx="200" cy="115" r="20" fill="#000" stroke="#39FF14" stroke-width="4"/>
+  <!-- Title Badge -->
+  <rect x="80" y="195" width="240" height="42" rx="10" fill="#39FF14" stroke="#000" stroke-width="3"/>
+  <text x="200" y="224" font-family="sans-serif" font-size="24" font-weight="900" fill="#000" text-anchor="middle">BEN 10</text>
+</svg>

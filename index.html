@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Network - Watch Cartoons, Shows & Games</title>
+  <!-- Global & Main Stylesheet Imports -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="images/cn-logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Cartoon Network Main Header -->
+  <header class="cn-header">
+    <div class="cn-nav-container">
+      <a href="index.html" class="cn-logo-brand">
+        <img src="images/cn-logo.svg" alt="Cartoon Network Logo" class="cn-logo-img">
+      </a>
+
+      <nav class="cn-nav-links">
+        <a href="#shows" class="cn-nav-link active">ALL SHOWS</a>
+        <a href="#schedule" class="cn-nav-link">SCHEDULE</a>
+        <a href="#featured" class="cn-nav-link">SPOTLIGHT</a>
+      </nav>
+
+      <div class="cn-nav-right">
+        <div class="cn-live-badge">
+          <span class="cn-live-pulse"></span>
+          LIVE TV
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Spotlight Section -->
+  <section class="hero-section" id="featured">
+    <div class="hero-card">
+      <div class="hero-content">
+        <span class="hero-tag">🔥 FEATURED SHOW OF THE MONTH</span>
+        <h1 class="hero-title">BEN 10: <span>OMNIVERSE</span></h1>
+        <p class="hero-description">
+          Join Ben Tennyson as he discovers a new alien device, unlocks 10 incredible alien forms, and battles galactic villains with his partner Rook!
+        </p>
+        <div class="hero-actions">
+          <a href="./ben-10/index.html" class="cn-btn">EXPLORE SHOW PAGE →</a>
+          <a href="#shows" class="cn-btn cn-btn-pink">BROWSE ALL 10 SHOWS</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero-banner.svg" alt="Ben 10 Featured Artwork" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Category & Filter Bar -->
+  <section class="filter-section">
+    <h2 class="section-title">ALL PROGRAM LINEUP</h2>
+    <div class="filter-tabs">
+      <button class="filter-btn active">ALL CARTOONS (10)</button>
+      <button class="filter-btn">ACTION & SCI-FI</button>
+      <button class="filter-btn">COMEDY</button>
+      <button class="filter-btn">CLASSICS</button>
+    </div>
+  </section>
+
+  <!-- Main Programs Grid -->
+  <main class="programs-section" id="shows">
+    <div class="programs-grid">
+
+      <!-- Show 1: Ben 10 -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge">ACTION • SCI-FI</span>
+          <span class="card-time-badge">MON-FRI 4:00 PM</span>
+          <img src="images/ben-10.svg" alt="Ben 10" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Ben 10</h3>
+          <p class="show-teaser">A 10-year-old boy discovers a alien watch that allows him to transform into 10 different alien heroes.</p>
+          <div class="card-footer">
+            <a href="./ben-10/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 2: Dexter's Laboratory -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge">SCI-FI • COMEDY</span>
+          <span class="card-time-badge">MON-FRI 4:30 PM</span>
+          <img src="images/dexters-laboratory.svg" alt="Dexter's Laboratory" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Dexter's Laboratory</h3>
+          <p class="show-teaser">A boy genius creates futuristic inventions in his secret lab, constantly thwarted by his annoying sister Dee Dee.</p>
+          <div class="card-footer">
+            <a href="./dexters-laboratory/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 3: The Powerpuff Girls -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-pink);">SUPERHERO • COMEDY</span>
+          <span class="card-time-badge">MON-FRI 5:00 PM</span>
+          <img src="images/powerpuff-girls.svg" alt="The Powerpuff Girls" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">The Powerpuff Girls</h3>
+          <p class="show-teaser">Blossom, Bubbles, and Buttercup protect Townsville from villains like Mojo Jojo before bedtime!</p>
+          <div class="card-footer">
+            <a href="./powerpuff-girls/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 4: Adventure Time -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-purple);">FANTASY • ADVENTURE</span>
+          <span class="card-time-badge">DAILY 5:30 PM</span>
+          <img src="images/adventure-time.svg" alt="Adventure Time" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Adventure Time</h3>
+          <p class="show-teaser">Finn the Human and Jake the Dog explore the magical Land of Ooo and protect its inhabitants.</p>
+          <div class="card-footer">
+            <a href="./adventure-time/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 5: The Amazing World of Gumball -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-cyan); color:#000;">COMEDY • SURREAL</span>
+          <span class="card-time-badge">DAILY 6:00 PM</span>
+          <img src="images/gumball.svg" alt="The Amazing World of Gumball" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">The Amazing World of Gumball</h3>
+          <p class="show-teaser">Follow the hilarious misadventures of Gumball Watterson and his adoptive goldfish brother Darwin.</p>
+          <div class="card-footer">
+            <a href="./the-amazing-world-of-gumball/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 6: Courage the Cowardly Dog -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-pink);">HORROR • COMEDY</span>
+          <span class="card-time-badge">NIGHTS 9:00 PM</span>
+          <img src="images/courage.svg" alt="Courage the Cowardly Dog" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Courage the Cowardly Dog</h3>
+          <p class="show-teaser">A timid pink dog overcomes his fears to defend his elderly owners from paranormal threats in Nowhere.</p>
+          <div class="card-footer">
+            <a href="./courage-the-cowardly-dog/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 7: Johnny Bravo -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-yellow); color:#000;">CLASSIC • COMEDY</span>
+          <span class="card-time-badge">WEEKENDS 3:00 PM</span>
+          <img src="images/johnny-bravo.svg" alt="Johnny Bravo" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Johnny Bravo</h3>
+          <p class="show-teaser">A muscular, sunglasses-wearing narcissist tries to get women to date him, usually ending in failure.</p>
+          <div class="card-footer">
+            <a href="./johnny-bravo/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 8: Samurai Jack -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-red);">ACTION • MARTIAL ARTS</span>
+          <span class="card-time-badge">NIGHTS 10:00 PM</span>
+          <img src="images/samurai-jack.svg" alt="Samurai Jack" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Samurai Jack</h3>
+          <p class="show-teaser">A prince samurai sent into a dystopian future quests to return to the past and defeat the demon Aku.</p>
+          <div class="card-footer">
+            <a href="./samurai-jack/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 9: Regular Show -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-lime); color:#000;">COMEDY • SLACKER</span>
+          <span class="card-time-badge">DAILY 7:00 PM</span>
+          <img src="images/regular-show.svg" alt="Regular Show" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Regular Show</h3>
+          <p class="show-teaser">Mordecai the blue jay and Rigby the raccoon try to avoid work, triggering surreal cosmic chaos.</p>
+          <div class="card-footer">
+            <a href="./regular-show/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Show 10: Foster's Home for Imaginary Friends -->
+      <article class="show-card">
+        <div class="card-banner">
+          <span class="cn-badge card-genre-badge" style="background:var(--cn-orange);">FAMILY • COMEDY</span>
+          <span class="card-time-badge">WEEKENDS 4:00 PM</span>
+          <img src="images/fosters-home.svg" alt="Foster's Home" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3 class="show-title">Foster's Home</h3>
+          <p class="show-teaser">Mac visits his blue imaginary friend Bloo at a Victorian mansion foster home filled with wacky friends.</p>
+          <div class="card-footer">
+            <a href="./fosters-home/index.html" class="cn-btn card-btn">VIEW SHOW PAGE →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Schedule Ticker Section -->
+  <section class="schedule-section" id="schedule">
+    <div class="schedule-container">
+      <div class="schedule-header">
+        <h2 style="font-size:1.5rem; color:var(--cn-yellow);">📺 TODAY'S CARTOON NETWORK LINEUP</h2>
+        <span style="font-weight:700; color:var(--cn-lime);">LIVE SCHEDULE</span>
+      </div>
+      <div class="schedule-items">
+        <div class="schedule-item">
+          <span class="schedule-time">4:00 PM</span>
+          <div class="schedule-info">
+            <h4>Ben 10</h4>
+            <p>S1 E4 • Alien Conflict</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-time">5:00 PM</span>
+          <div class="schedule-info">
+            <h4>Powerpuff Girls</h4>
+            <p>S2 E8 • Townsville Rumble</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-time">6:00 PM</span>
+          <div class="schedule-info">
+            <h4>Gumball</h4>
+            <p>S3 E12 • The Shell</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-time">7:00 PM</span>
+          <div class="schedule-info">
+            <h4>Regular Show</h4>
+            <p>S4 E15 • Park Troubles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cartoon Network Footer -->
+  <footer class="cn-footer">
+    <div class="footer-container">
+      <img src="images/cn-logo.svg" alt="Cartoon Network" class="footer-logo">
+      <ul class="footer-nav">
+        <li><a href="#shows" class="footer-link">ALL SHOWS</a></li>
+        <li><a href="#schedule" class="footer-link">SCHEDULE</a></li>
+        <li><a href="#" class="footer-link">GAMES</a></li>
+        <li><a href="#" class="footer-link">PRIVACY POLICY</a></li>
+        <li><a href="#" class="footer-link">TERMS OF USE</a></li>
+      </ul>
+      <p class="footer-note">
+        TM & © 2026 Cartoon Network. A Warner Bros. Discovery Company. All Rights Reserved.<br>
+        <strong style="color:var(--cn-yellow);">Note for Team Members:</strong> All 10 subfolder pages (`index.html`, `index.css`, `images/`) are linked and initialized for further content development.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

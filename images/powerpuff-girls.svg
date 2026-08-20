@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <rect width="400" height="260" fill="#200020"/>
+  <rect x="10" y="10" width="380" height="240" rx="16" fill="#3a0033" stroke="#FF007F" stroke-width="4"/>
+  <!-- 3 Color Orbs representing Blossom, Bubbles, Buttercup -->
+  <circle cx="140" cy="105" r="40" fill="#FF007F" stroke="#FFF" stroke-width="4"/>
+  <circle cx="200" cy="105" r="40" fill="#00ECE5" stroke="#FFF" stroke-width="4"/>
+  <circle cx="260" cy="105" r="40" fill="#39FF14" stroke="#FFF" stroke-width="4"/>
+  <polygon points="200,45 210,65 230,65 215,80 220,100 200,85 180,100 185,80 170,65 190,65" fill="#FFDF00"/>
+  <!-- Title Badge -->
+  <rect x="50" y="195" width="300" height="42" rx="10" fill="#FF007F" stroke="#000" stroke-width="3"/>
+  <text x="200" y="224" font-family="sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle">POWERPUFF GIRLS</text>
+</svg>

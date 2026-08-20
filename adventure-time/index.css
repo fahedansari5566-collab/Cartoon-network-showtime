@@ -1,0 +1,8 @@
+/* Styles specific to Adventure Time page */
+body {
+  background-color: #002238;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-yellow);
+}

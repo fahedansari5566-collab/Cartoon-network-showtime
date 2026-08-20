@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7000FF"/>
+      <stop offset="50%" stop-color="#00ECE5"/>
+      <stop offset="100%" stop-color="#FF007F"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="20" fill="url(#heroGrad)"/>
+  
+  <!-- Glowing Omnitrix / CN Badge Graphic -->
+  <circle cx="300" cy="200" r="130" fill="#000" stroke="#39FF14" stroke-width="12"/>
+  <polygon points="210,130 390,130 300,200" fill="#39FF14"/>
+  <polygon points="210,270 390,270 300,200" fill="#39FF14"/>
+  <circle cx="300" cy="200" r="35" fill="#000" stroke="#39FF14" stroke-width="6"/>
+
+  <!-- Cartoon Network Checkerboard Floating Badges -->
+  <rect x="50" y="40" width="60" height="60" rx="8" fill="#FFDF00" stroke="#000" stroke-width="4" transform="rotate(-10 80 70)"/>
+  <text x="80" y="80" font-family="sans-serif" font-size="32" font-weight="900" fill="#000" text-anchor="middle" transform="rotate(-10 80 70)">10</text>
+  
+  <rect x="480" y="50" width="70" height="70" rx="8" fill="#FF007F" stroke="#000" stroke-width="4" transform="rotate(15 515 85)"/>
+  <text x="515" y="98" font-family="sans-serif" font-size="36" font-weight="900" fill="#FFF" text-anchor="middle" transform="rotate(15 515 85)">★</text>
+  
+  <rect x="60" y="280" width="80" height="80" rx="12" fill="#00ECE5" stroke="#000" stroke-width="4" transform="rotate(12 100 320)"/>
+  <text x="100" y="333" font-family="sans-serif" font-size="38" font-weight="900" fill="#000" text-anchor="middle" transform="rotate(12 100 320)">CN</text>
+
+  <!-- Title Badge -->
+  <rect x="150" y="320" width="300" height="50" rx="25" fill="#FFDF00" stroke="#000" stroke-width="4"/>
+  <text x="300" y="353" font-family="sans-serif" font-size="22" font-weight="900" fill="#000" text-anchor="middle">BEN 10 OMNIVERSE</text>
+</svg>

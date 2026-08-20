@@ -1,0 +1,8 @@
+/* Styles specific to Regular Show page */
+body {
+  background-color: #001a29;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-cyan);
+}

@@ -1,0 +1,8 @@
+/* Styles specific to Samurai Jack page */
+body {
+  background-color: #1c0000;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-red);
+}

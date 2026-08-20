@@ -1,0 +1,8 @@
+/* Styles specific to Johnny Bravo page */
+body {
+  background-color: #241600;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-yellow);
+}

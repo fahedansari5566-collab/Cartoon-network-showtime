@@ -1,0 +1,8 @@
+/* Styles specific to Dexter's Laboratory page */
+body {
+  background-color: #050e17;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-cyan);
+}

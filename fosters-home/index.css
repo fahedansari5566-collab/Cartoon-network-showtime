@@ -1,0 +1,8 @@
+/* Styles specific to Foster's Home for Imaginary Friends page */
+body {
+  background-color: #241200;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-orange);
+}

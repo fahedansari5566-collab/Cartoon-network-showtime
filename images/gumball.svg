@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <rect width="400" height="260" fill="#003547"/>
+  <rect x="10" y="10" width="380" height="240" rx="16" fill="#007791" stroke="#00ECE5" stroke-width="4"/>
+  <!-- Gumball & Darwin Orbs -->
+  <circle cx="165" cy="110" r="45" fill="#00ECE5" stroke="#000" stroke-width="4"/>
+  <circle cx="235" cy="110" r="40" fill="#FF6B00" stroke="#000" stroke-width="4"/>
+  <!-- Eyes -->
+  <ellipse cx="155" cy="100" rx="8" ry="14" fill="#FFF" stroke="#000" stroke-width="2"/>
+  <ellipse cx="175" cy="100" rx="8" ry="14" fill="#FFF" stroke="#000" stroke-width="2"/>
+  <!-- Title Badge -->
+  <rect x="30" y="195" width="340" height="42" rx="10" fill="#00ECE5" stroke="#000" stroke-width="3"/>
+  <text x="200" y="224" font-family="sans-serif" font-size="18" font-weight="900" fill="#000" text-anchor="middle">THE AMAZING WORLD OF GUMBALL</text>
+</svg>

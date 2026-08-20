@@ -1,0 +1,8 @@
+/* Styles specific to The Powerpuff Girls page */
+body {
+  background-color: #1a0016;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-pink);
+}

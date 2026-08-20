@@ -1,0 +1,210 @@
+/* ==========================================
+   CARTOON NETWORK - GLOBAL STYLESHEET
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Titan+One&display=swap');
+
+:root {
+  /* Cartoon Network Signature Color Palette */
+  --cn-black: #000000;
+  --cn-white: #ffffff;
+  --cn-yellow: #ffdf00;
+  --cn-cyan: #00ece5;
+  --cn-pink: #ff007f;
+  --cn-lime: #39ff14;
+  --cn-purple: #7000ff;
+  --cn-orange: #ff6b00;
+  --cn-red: #ff2a2a;
+  --cn-dark-bg: #121216;
+  --cn-card-bg: #1e1e24;
+  --cn-gray: #2a2a32;
+  --cn-light-gray: #f0f0f5;
+
+  /* Typography */
+  --font-heading: 'Titan One', 'Impact', cursive, sans-serif;
+  --font-body: 'Fredoka', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Styling Tokens */
+  --border-thick: 3px solid #000000;
+  --border-heavy: 4px solid #000000;
+  --shadow-flat: 4px 4px 0px #000000;
+  --shadow-pop: 8px 8px 0px #000000;
+  --shadow-hover: 12px 12px 0px #000000;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 50px;
+  --transition-fast: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--cn-dark-bg);
+  color: var(--cn-white);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.08) 2px, transparent 2px),
+    linear-gradient(to right, rgba(0, 236, 229, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 0, 127, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px, 64px 64px, 64px 64px;
+  background-position: 0 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Selection & Scrollbar */
+::selection {
+  background-color: var(--cn-yellow);
+  color: var(--cn-black);
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cn-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cn-cyan);
+  border: 3px solid var(--cn-black);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cn-pink);
+}
+
+/* Reusable Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Button & Badge Utility Classes */
+.cn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--cn-black);
+  background-color: var(--cn-yellow);
+  border: var(--border-thick);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-flat);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.cn-btn:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-pop);
+  background-color: var(--cn-cyan);
+}
+
+.cn-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.cn-btn-pink {
+  background-color: var(--cn-pink);
+  color: var(--cn-white);
+}
+
+.cn-btn-pink:hover {
+  background-color: var(--cn-yellow);
+  color: var(--cn-black);
+}
+
+.cn-btn-lime {
+  background-color: var(--cn-lime);
+  color: var(--cn-black);
+}
+
+.cn-btn-lime:hover {
+  background-color: var(--cn-cyan);
+}
+
+.cn-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--cn-black);
+  background: var(--cn-pink);
+  color: var(--cn-white);
+}
+
+/* Subpage Clean Styling */
+.subpage-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--cn-card-bg);
+  border: var(--border-heavy);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-pop);
+  text-align: center;
+}
+
+.subpage-wrapper h1 {
+  font-size: 3rem;
+  color: var(--cn-yellow);
+  text-shadow: 4px 4px 0px #000;
+  margin-bottom: 24px;
+}
+
+.subpage-poster-box {
+  margin: 30px auto;
+  max-width: 480px;
+  border: var(--border-thick);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-flat);
+  background-color: var(--cn-black);
+}
+
+.subpage-poster-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subpage-nav-back {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+}

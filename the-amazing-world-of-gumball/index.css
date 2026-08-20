@@ -1,0 +1,8 @@
+/* Styles specific to The Amazing World of Gumball page */
+body {
+  background-color: #001f28;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-cyan);
+}

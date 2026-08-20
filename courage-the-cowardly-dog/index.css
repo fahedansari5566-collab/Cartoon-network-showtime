@@ -1,0 +1,8 @@
+/* Styles specific to Courage the Cowardly Dog page */
+body {
+  background-color: #180018;
+}
+
+.subpage-wrapper h1 {
+  color: var(--cn-pink);
+}
