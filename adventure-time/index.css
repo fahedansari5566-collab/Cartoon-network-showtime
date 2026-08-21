@@ -1,8 +1,393 @@
-/* Styles specific to Adventure Time page */
-body {
-  background-color: #002238;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.subpage-wrapper h1 {
-  color: var(--cn-yellow);
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #102a4d;
+    color: white;
+}
+
+header {
+    width: 100%;
+    background-color: #0d213d;
+    border-bottom: 1px solid #274567;
+}
+
+.navbar {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 4%;
+    gap: 30px;
+}
+
+.logo {
+    min-width: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d5d8de;
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd71e;
+}
+
+.nav-links .active a {
+    color: #ffd71e;
+    border-bottom: 3px solid #ffd71e;
+}
+
+.back-btn {
+    text-decoration: none;
+    background-color: #ffd51e;
+    color: #172033;
+    padding: 16px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 5px 15px rgba(255, 213, 30, 0.2);
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 695px;
+    display: grid;
+    grid-template-columns: 1fr 1.45fr;
+    align-items: center;
+    gap: 45px;
+    padding: 55px 4%;
+    background:
+        radial-gradient(circle at top left, #1d4e81, transparent 40%),
+        #12365f;
+}
+
+.hero-content {
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+.hero-content h1 {
+    color: #ffd51e;
+    font-size: clamp(60px, 7vw, 100px);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -3px;
+    text-shadow:
+        5px 5px 0 #0a1c34,
+        -2px -2px 0 #0a1c34,
+        2px -2px 0 #0a1c34,
+        -2px 2px 0 #0a1c34;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 35px 0 28px;
+}
+
+.divider span {
+    width: 120px;
+    height: 2px;
+    background-color: #8192a6;
+}
+
+.divider div {
+    font-size: 25px;
+}
+
+.hero-content p {
+    color: #d7dce4;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 470px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.explore-btn,
+.trailer-btn {
+    min-height: 55px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.explore-btn {
+    background-color: #ffd51e;
+    color: #182238;
+}
+
+.explore-btn:hover {
+    transform: translateY(-3px);
+}
+
+.trailer-btn {
+    color: white;
+    border: 2px solid #c7d0db;
+}
+
+.trailer-btn:hover {
+    background-color: white;
+    color: #15263f;
+}
+
+.hero-image {
+    width: 100%;
+    height: 600px;
+    border: 4px solid #dce5e5;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px 8%;
+    background-color: #0d213d;
+}
+
+.bmo-img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bmo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.about-content {
+    max-width: 750px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.yellow-line {
+    width: 90px;
+    height: 4px;
+    background-color: #ffd51e;
+    margin: 12px 0 22px 90px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d5d9e0;
+}
+
+@media screen and (max-width: 1050px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        min-width: auto;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .hero-content p {
+        margin: auto;
+    }
+
+    .divider {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 800px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about {
+        gap: 50px;
+    }
+
+    .bmo-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .back-btn {
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 62px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .divider span {
+        width: 70px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .explore-btn,
+    .trailer-btn {
+        width: 100%;
+    }
+
+    .hero-image {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+        gap: 30px;
+    }
+
+    .bmo-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .yellow-line {
+        margin: 12px auto 22px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero-content h1 {
+        font-size: 52px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .bmo-img {
+        width: 150px;
+        height: 150px;
+    }
 }
